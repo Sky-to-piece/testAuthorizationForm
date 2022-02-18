@@ -26,38 +26,30 @@ namespace NewAgeApp
         private void Authorization_Load(object sender, EventArgs e)
         {
             headerText.Text = this.Text;
+            PBAuthLogo.Image = PBHeaderLogo.Image;
         }
 
         private void TBLogin_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
-            {
-                TBPassword.Focus();
-            }
+            { TBPassword.Focus(); }
         }
 
         private void TBPassword_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
-            {
-                BTEnter.Focus();
-            }
+            { BTEnter.Focus(); }
         }
 
         private void buttonExit_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
+        { Close(); }
+
 
         private void BTMinBox_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Minimized;
-        }
+        { this.WindowState = FormWindowState.Minimized; }
 
         private void BTCreateAccount_Click(object sender, EventArgs e)
-        {
-            new CreateAccount().ShowDialog();
-        }
+        { new CreateAccount().ShowDialog(); }
 
         private void BTEnter_Click(object sender, EventArgs e)
         {
@@ -69,9 +61,7 @@ namespace NewAgeApp
         {
             // если нажата левая кнопка мыши
             if (e.Button == MouseButtons.Left)
-            {
-                moveStart = new Point(e.X, e.Y);
-            }
+            { moveStart = new Point(e.X, e.Y); }
         }
 
         private void penelHeader_MouseMove(object sender, MouseEventArgs e)

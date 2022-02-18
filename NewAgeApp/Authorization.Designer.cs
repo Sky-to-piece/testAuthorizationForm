@@ -43,9 +43,11 @@
             this.penelHeader = new System.Windows.Forms.Panel();
             this.headerText = new System.Windows.Forms.Label();
             this.BTMinBox = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.PBHeaderLogo = new System.Windows.Forms.PictureBox();
+            this.PBAuthLogo = new System.Windows.Forms.PictureBox();
             this.penelHeader.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PBHeaderLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PBAuthLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonExit
@@ -174,7 +176,7 @@
             // penelHeader
             // 
             this.penelHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(114)))), ((int)(((byte)(120)))));
-            this.penelHeader.Controls.Add(this.pictureBox1);
+            this.penelHeader.Controls.Add(this.PBHeaderLogo);
             this.penelHeader.Controls.Add(this.headerText);
             this.penelHeader.Controls.Add(this.BTMinBox);
             this.penelHeader.Controls.Add(this.buttonExit);
@@ -211,15 +213,23 @@
             this.BTMinBox.UseVisualStyleBackColor = false;
             this.BTMinBox.Click += new System.EventHandler(this.BTMinBox_Click);
             // 
-            // pictureBox1
+            // PBHeaderLogo
             // 
-            this.pictureBox1.Image = global::NewAgeApp.Properties.Resources.smoke;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(29, 29);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 12;
-            this.pictureBox1.TabStop = false;
+            this.PBHeaderLogo.Image = global::NewAgeApp.Properties.Resources.smoke;
+            this.PBHeaderLogo.Location = new System.Drawing.Point(3, 0);
+            this.PBHeaderLogo.Name = "PBHeaderLogo";
+            this.PBHeaderLogo.Size = new System.Drawing.Size(29, 29);
+            this.PBHeaderLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PBHeaderLogo.TabIndex = 12;
+            this.PBHeaderLogo.TabStop = false;
+            // 
+            // PBAuthLogo
+            // 
+            this.PBAuthLogo.Location = new System.Drawing.Point(278, 55);
+            this.PBAuthLogo.Name = "PBAuthLogo";
+            this.PBAuthLogo.Size = new System.Drawing.Size(64, 64);
+            this.PBAuthLogo.TabIndex = 12;
+            this.PBAuthLogo.TabStop = false;
             // 
             // Authorization
             // 
@@ -228,6 +238,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(68)))), ((int)(((byte)(76)))));
             this.ClientSize = new System.Drawing.Size(600, 400);
             this.ControlBox = false;
+            this.Controls.Add(this.PBAuthLogo);
             this.Controls.Add(this.penelHeader);
             this.Controls.Add(this.TBPassword);
             this.Controls.Add(this.TBLogin);
@@ -252,7 +263,8 @@
             this.Load += new System.EventHandler(this.Authorization_Load);
             this.penelHeader.ResumeLayout(false);
             this.penelHeader.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PBHeaderLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PBAuthLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -274,7 +286,8 @@
         private System.Windows.Forms.Panel penelHeader;
         private System.Windows.Forms.Button BTMinBox;
         private System.Windows.Forms.Label headerText;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox PBHeaderLogo;
+        private System.Windows.Forms.PictureBox PBAuthLogo;
     }
 }
 
