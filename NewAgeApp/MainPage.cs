@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace NewAgeApp
 {
-    public partial class Authorization : Form
+    public partial class MainPage : Form
     {
-        public Authorization()
+        public MainPage()
         {
             InitializeComponent();
+        }
+
+        private void MainPage_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
