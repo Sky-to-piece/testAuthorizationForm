@@ -28,11 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainPage));
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.notifyIconMy = new System.Windows.Forms.NotifyIcon(this.components);
             this.SuspendLayout();
             // 
             // panel3
@@ -69,6 +71,13 @@
             this.panel1.Size = new System.Drawing.Size(70, 70);
             this.panel1.TabIndex = 12;
             // 
+            // notifyIconMy
+            // 
+            this.notifyIconMy.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIconMy.Icon")));
+            this.notifyIconMy.Text = "Текст-подсказка";
+            this.notifyIconMy.Visible = true;
+            this.notifyIconMy.MouseClick += new System.Windows.Forms.MouseEventHandler(this.notifyIconMy_MouseClick);
+            // 
             // MainPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -83,8 +92,11 @@
             this.ImeMode = System.Windows.Forms.ImeMode.Disable;
             this.MinimumSize = new System.Drawing.Size(600, 400);
             this.Name = "MainPage";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Главная";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainPage_FormClosed);
+            this.Load += new System.EventHandler(this.MainPage_Load);
+            this.Resize += new System.EventHandler(this.MainPage_Resize);
             this.ResumeLayout(false);
 
         }
@@ -95,5 +107,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.NotifyIcon notifyIconMy;
     }
 }

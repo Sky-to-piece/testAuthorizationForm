@@ -58,6 +58,7 @@
     <Compile Include="CreateAccount.Designer.cs">
       <DependentUpon>CreateAccount.cs</DependentUpon>
     </Compile>
+    <Compile Include="DB.cs" />
     <Compile Include="MainPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,6 +117,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\smoke.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nightZZZ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\smokeLight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\view.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hide.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
